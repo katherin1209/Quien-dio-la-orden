@@ -1,0 +1,363 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+nav{
+    background-color: black;
+}
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:white;
+     
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+    object-fit:cover;
+    height: 39rem;
+   
+}
+
+
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 50px;
+    padding-top: 120px;
+
+    background-image:  url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#galeria h2{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+
+    color: white;
+}
+
+#galeria figure{
+ /*   outline: 5px solid red;  */
+    width: 30%;
+    min-width: 300px;
+    height: 300px;
+    margin: 20px 10px;
+    position: relative;
+    box-shadow: 0px 30px 10px -20px black;
+
+    cursor: pointer;
+
+}
+
+#galeria figure img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    
+}
+
+#galeria figure figcaption{
+    background-color: rgba(10, 2, 2, 0.513);
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    position: absolute;     
+    text-align: center;
+    color: white;
+    
+    bottom: 0;
+    left: 0; 
+    transition: 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+#galeria figure:hover figcaption{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+
+
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#contacto{
+    padding: 20px;
+    padding-top: 70px;
+    background-image: url(../img/falsos.jpg);
+    object-fit: cover;
+    background-size: cover;
+    margin-top: 50px;
+    
+}
+#contacto form{
+    background-color: rgba(14, 7, 7, 0.37);
+    width: 50%;
+    max-width: 500px;
+    margin: auto;   
+    border-radius: 10px; 
+}
+
+#contacto form fieldset{
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#contacto form legend{
+    
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+
+#contacto form label{
+    color: white;
+    font-weight: 700;
+    margin: 20px 0 5px;
+    display: inline-block;
+    font-size: 1.5em;
+    
+}
+
+#contacto form input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    transition: 0.4s;
+}
+
+#contacto form input:focus{
+    outline: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.767);
+}
+
+#contacto form input[type=text]{
+    border: white 5px solid;
+}
+
+#contacto form select{
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+}
+
+#contacto form select:focus{
+    outline: none;
+}
+
+#contacto form textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    padding: 20px;
+    resize: none;
+}
+
+#contacto form textarea:focus{
+    outline: none;
+}
+#contacto form button{
+    background-color:black;
+    color: white;
+    font-size: 2em;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+#contacto form button:hover{
+    background-color: rgb(6, 6, 54);
+}
+
+
+
+/*--------------------- INICIO Escuchanos-------------------------*/
+.luz{
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        margin:  0 200px;
+        
+}
+.maria{
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        margin:  0 200px;
+}
+
+
+/*--------------------- FIN Escuchanos-------------------------*/
+
+
+
+
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: black;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
